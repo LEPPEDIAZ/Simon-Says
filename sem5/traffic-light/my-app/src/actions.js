@@ -30,14 +30,14 @@ export function playSequence(arr, index) {
       this.setState({
         currentColor: arr[i],
       });
-    }, (i + 1) * 700);
+    }, (i + 1) * 500);
   }
 
   setTimeout(() => {
     this.setState({
       currentColor: null,
     });
-  }, (index + 1) * 700);
+  }, (index + 1) * 500);
 }
 
 export function checkUserOption(color, state) {

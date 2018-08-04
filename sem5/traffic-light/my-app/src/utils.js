@@ -22,18 +22,22 @@ const soundBlue = new Audio('./soundBlue.mp3');
 
 export function playGreen() {
   soundGreen.play();
+  console.log("se presiono el verde");
 }
 
 export function playRed() {
   soundRed.play();
+  console.log("se presiono el rojo");
 }
 
 export function playYellow() {
   soundYellow.play();
+  console.log("se presiono el amarillo");
 }
 
 export function playBlue() {
   soundBlue.play();
+  console.log("se preciono el azul");
 }
 
 export function playSounds(input) {

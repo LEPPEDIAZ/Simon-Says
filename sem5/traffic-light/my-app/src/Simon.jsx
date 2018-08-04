@@ -37,19 +37,23 @@ class Simon extends Component {
     playSounds(color);
 
     this.setState(checkUserOption.bind(null, color), () => {
+      console.log("El usuario presiono");
       const { sequence, round, currentUserIndex } = this.state;
       if (currentUserIndex === 0) {
         playSequence.bind(this)(sequence, round);
+        console.log("Turno del Juego");
       }
     });
   }
 
   handleClickStart() {
+    console.log("Start");
     const { sequence, round } = this.state;
 
     playSequence.bind(this, sequence, round)();
   }
   handleClickOnOff() {
+    console.log("Activar Juego");
     this.setState(turnGameOnOff.bind(this));
   
   }
@@ -88,6 +92,7 @@ class Simon extends Component {
             round={this.state.round}
             onClickOnOff={this.handleClickOnOff}
             onClickStart={this.handleClickStart}
+           
           />
         </div>
       </div>

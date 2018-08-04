@@ -50,7 +50,7 @@ class Simon extends Component {
       const { sequence, round, currentUserIndex } = this.state;
       if (currentUserIndex === 0) {
         playSequence.bind(this)(sequence, round);
-        console.log("funciona")
+        console.log("perdio")
       }
     });
   }

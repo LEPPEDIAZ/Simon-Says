@@ -52,6 +52,7 @@ export function checkUserOption(color, state) {
   if (color === sequence[currentUserIndex] && (currentUserIndex + 1) < round) {
     return {
       currentUserIndex: currentUserIndex + 1,
+
     };
   }
 

@@ -33,16 +33,6 @@ class Simon extends Component {
     this.addBlue = this.handleUserTurn.bind(this, 'Blue');
   }
 
-  handleClickOnOff() {
-    this.setState(turnGameOnOff.bind(this));
-  }
-
-  handleClickStart() {
-    const { sequence, round } = this.state;
-
-    playSequence.bind(this, sequence, round)();
-  }
-
   handleUserTurn(color) {
     playSounds(color);
 
@@ -50,14 +40,26 @@ class Simon extends Component {
       const { sequence, round, currentUserIndex } = this.state;
       if (currentUserIndex === 0) {
         playSequence.bind(this)(sequence, round);
-        console.log("perdio")
       }
     });
   }
 
+  handleClickStart() {
+    const { sequence, round } = this.state;
+
+    playSequence.bind(this, sequence, round)();
+  }
+  handleClickOnOff() {
+    this.setState(turnGameOnOff.bind(this));
+  
+  }
+
+ 
+
   render() {
     const { currentColor } = this.state;
     const activeClass = currentColor ? `active${currentColor}` : '';
+  
 
     return (
       <div className={`Simon ${activeClass}`}>

@@ -18,7 +18,9 @@ function Control(props) {
         className="Control-button Control-buttonOnOff"
         onClick={props.onClickOnOff}
       />
-      <h3 className="Control-textOnOff">On/Off</h3>
+      <h3 className="Control-textOnOff">On</h3>
+    
+
      
       
     </div>

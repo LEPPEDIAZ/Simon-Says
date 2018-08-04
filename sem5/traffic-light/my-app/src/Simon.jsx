@@ -50,6 +50,7 @@ class Simon extends Component {
       const { sequence, round, currentUserIndex } = this.state;
       if (currentUserIndex === 0) {
         playSequence.bind(this)(sequence, round);
+        console.log("funciona")
       }
     });
   }
@@ -64,25 +65,21 @@ class Simon extends Component {
           className="Simon-button Simon-buttonGreen"
           onClick={this.addGreen}
         >
-          Green
         </button>
         <button
           className="Simon-button Simon-buttonRed"
           onClick={this.addRed}
         >
-          Red
         </button>
         <button
           className="Simon-button Simon-buttonYellow"
           onClick={this.addYellow}
         >
-          Yellow
         </button>
         <button
           className="Simon-button Simon-buttonBlue"
           onClick={this.addBlue}
         >
-          Blue
         </button>
         <div className="Simon-control">
           <Control

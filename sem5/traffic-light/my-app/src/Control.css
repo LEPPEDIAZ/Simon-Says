@@ -67,25 +67,7 @@
 
 .Control-buttonOnOff:hover,
 .Control-buttonOnOff:focus {
-  background-color: hsl(352, 88%, 65%);
-}
-
-.Control-buttonOnOff:active {
-  box-shadow: 0 2px 30px hsl(352, 88%, 35%);
-}
-
-.Control-buttonLast {
-  background-color: hsl(190, 88%, 45%);
-  box-shadow: 0 4px hsl(190, 88%, 35%);
-}
-
-.Control-buttonLast:hover,
-.Control-buttonLast:focus {
-  background-color: hsl(190, 88%, 65%);
-}
-
-.Control-buttonLast:active {
-  box-shadow: 0 2px 30px hsl(190, 88%, 35%);
+  background-color: green;
 }
 
 .Control-textCount {
@@ -130,6 +112,7 @@
 .Control-textStart {
   grid-column: col;
   grid-row: row 5;
+  margin-left: 4rem;
 }
 
 .Control-buttonOnOff {

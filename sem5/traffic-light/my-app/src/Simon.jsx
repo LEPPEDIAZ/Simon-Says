@@ -23,6 +23,9 @@ class Simon extends Component {
       currentColor: null,
       currentUserIndex: null,
     };
+    this.state = {
+      black: true
+   }
 
     this.handleClickOnOff = this.handleClickOnOff.bind(this);
     this.handleClickStart = this.handleClickStart.bind(this);

@@ -9,6 +9,9 @@ function Control(props) {
       <div className="Control-boxCount">
         {props.round}
       </div>
+      <div className="Control-LoosesCount">
+        {props.loose}
+      </div>
       <button
         className="Control-button Control-buttonStart"
         onClick={props.onClickStart}
@@ -30,11 +33,13 @@ function Control(props) {
 Control.propTypes = {
   onClickOnOff: PropTypes.func.isRequired,
   onClickStart: PropTypes.func.isRequired,
+  loose: PropTypes.number,
   round: PropTypes.number,
 };
 
 Control.defaultProps = {
   round: null,
+  loose: null,
 };
 
 export default Control;

@@ -1,4 +1,4 @@
-/* eslint-disable  import/prefer-default-export */
+/* Actions by Ana lucia Diaz Leppe */
 import {
   getRandomColors,
   playSounds,
@@ -53,6 +53,19 @@ export function checkUserOption(color, state) {
     return {
       currentUserIndex: currentUserIndex + 1,
 
+    };
+  }
+
+  return {
+    currentUserIndex: 0,
+  };
+}
+export function checkLooserOption(color, state) {
+  const { sequence, round, currentUserIndex } = state;
+  if (color !== sequence[currentUserIndex] && (currentUserIndex + 1) !== round) {
+    return {
+      round: round - 1,
+      currentUserIndex: 0,
     };
   }
 

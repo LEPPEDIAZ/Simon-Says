@@ -4,6 +4,7 @@ import Control from './Control';
 import {
   turnGameOnOff,
   checkUserOption,
+  checkLooserOption,
   playSequence,
 } from './actions';
 
@@ -20,6 +21,7 @@ class Simon extends Component {
       sequence: [],
       status: 'off',
       round: null,
+      loose: null,
       currentColor: null,
       currentUserIndex: null,
     };
@@ -46,7 +48,19 @@ class Simon extends Component {
         playSequence.bind(this)(sequence, round);
         console.log("Turno del Juego");
       }
-    });
+  
+    });   
+    /*
+    this.setState(checkLooserOption.bind(null, color), () => {
+      console.log("El usuario presiono 2");
+      const { sequence, loose, currentUserIndex } = this.state;
+      if (currentUserIndex === 0) {
+        playSequence.bind(this)(sequence, loose);
+        console.log("Turno del Juego 2");
+      }
+  
+    });     
+    */     
   }
 
   handleClickStart() {
@@ -93,6 +107,7 @@ class Simon extends Component {
         <div className="Simon-control">
           <Control
             round={this.state.round}
+            loose={this.state.loose}
             onClickOnOff={this.handleClickOnOff}
             onClickStart={this.handleClickStart}
            
@@ -105,10 +120,12 @@ class Simon extends Component {
 
 Simon.propTypes = {
   round: PropTypes.number,
+  loose: PropTypes.number,
 };
 
 Simon.defaultProps = {
   round: null,
+  loose: null,
 };
 
 export default Simon;

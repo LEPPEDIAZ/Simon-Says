@@ -1,9 +1,11 @@
 .Simon {
   background-color: #000;
+  color: whitesmoke;
+  font-family: 'Squada One', cursive;
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(2, 1fr);
-  height: 500px;
+  height: 700px;
   margin: 0 auto;
   padding: 40px;
   position: relative;

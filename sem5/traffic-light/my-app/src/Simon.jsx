@@ -24,6 +24,7 @@ class Simon extends Component {
       loose: null,
       currentColor: null,
       currentUserIndex: null,
+      clicked: true,
     };
     this.state = {
       black: true
@@ -113,6 +114,11 @@ class Simon extends Component {
            
           />
         </div>
+        <div onClick= {() => this.setState({clicked: !this.state.clicked})}>
+          {
+              this.state.clicked? 'HAS PERDIDO' : ''  
+          }
+          </div>    
       </div>
     );
   }

@@ -37,7 +37,7 @@ export function playYellow() {
 
 export function playBlue() {
   soundBlue.play();
-  console.log("se preciono el azul");
+  console.log("se presiono el azul");
 }
 
 export function playSounds(input) {

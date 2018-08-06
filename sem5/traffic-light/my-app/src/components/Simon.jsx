@@ -10,7 +10,7 @@ import {
 
 import {
   playSounds,
-} from './utils';
+} from './music/utils';
 
 import './Simon.css';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Simon from './Simon';
+import Simon from './components/Simon';
 import './App.css';
 
 function App() {

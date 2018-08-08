@@ -31,7 +31,7 @@
 .Simon.activeGreen .Simon-buttonGreen,
 .Simon-buttonGreen:hover,
 .Simon-buttonGreen:active {
-  background-color: hsl(85, 88%, 65%);
+  background-color: darkgreen;
 }
 
 .Simon-buttonGreen:active {
@@ -47,7 +47,7 @@
 .Simon.activeRed .Simon-buttonRed,
 .Simon-buttonRed:hover,
 .Simon-buttonRed:active {
-  background-color: hsl(352, 88%, 65%);
+  background-color: darkred;
 }
 
 .Simon-buttonRed:active {
@@ -63,7 +63,7 @@
 .Simon.activeYellow .Simon-buttonYellow,
 .Simon-buttonYellow:hover,
 .Simon-buttonYellow:active {
-  background-color: hsl(51, 88%, 65%);
+  background-color:darkgoldenrod;
 }
 
 .Simon-buttonYellow:active {
@@ -79,7 +79,7 @@
 .Simon.activeBlue .Simon-buttonBlue,
 .Simon-buttonBlue:hover,
 .Simon-buttonBlue:active {
-  background-color: hsl(190, 88%, 65%);
+  background-color: darkblue;
 }
 
 .Simon-buttonBlue:active {

@@ -1,1 +1,0 @@
-creditos para: Jose Alvarado
